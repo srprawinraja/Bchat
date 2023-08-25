@@ -1,0 +1,1 @@
+Create a WhatsApp-like app for Bluetooth chatting. Users can directly connect devices for offline chatting. Prioritize message security and user-friendliness. Regularly update the app to enhance performance and add features. Continuously optimize for better user experience.
