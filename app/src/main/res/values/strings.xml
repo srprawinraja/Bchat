@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BChat</string>
+    <string name="receivermessages">receiver message</string>
+    <string name="am">13:43am</string>
+    <string name="sendermessages">sender messages</string>
+    <string name="pm">13:43am</string>
+    <string name="Next">Next</string>
+    <string name="ok">OK</string>
+    <string name="Selectafriend">Select a friend</string>
+    <string name="EnterYourName">Enter Your Name</string>
+    <string name="Typeyourname">Type your name</string>
+    <string name="ChitChat">ChitChat</string>
+    <string name="ChangeYourName">Change Your Name</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="UserName">User Name</string>
+    <string name="Color">Color</string>
+    <string name="ProfileColor">Profile Color</string>
+    <string name="NotifyHide">Hide Notfication</string>
+    <string name="Vibrate">Vibrate</string>
+    <string name="ProfileBackground">Profile Background</string>
+
+</resources>

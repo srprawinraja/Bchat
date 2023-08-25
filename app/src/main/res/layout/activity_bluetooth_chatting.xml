@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/whole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothChatting">
+
+    <RelativeLayout
+
+        android:id="@+id/bluetooth_rel"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageButton
+            android:id="@+id/option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="#0000"
+            android:src="@drawable/ic_baseline_drag_handle_24"
+            android:translationX="-22sp"
+            android:translationY="10sp">
+
+        </ImageButton>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#17000005">
+
+        </View>
+
+        <TextView
+            android:id="@+id/bluetooth_textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000104"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bluetooth_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bluetooth_textView7"
+            android:layout_centerInParent="true"
+            android:textColor="#0B0A0A" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/ic_baseline_circle_24">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bluetooth_send"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginStart="7sp"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_send_24"
+            android:translationY="5sp"
+
+            />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/bluetooth_input_message"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/frame"
+        android:background="@drawable/rec"
+        android:hint="type your message"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#807E7D">
+
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/ic_baseline_insert_photo_24" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/bluetooth_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bluetooth_input_message"
+        android:layout_below="@+id/bluetooth_rel"
+        android:layout_marginBottom="10sp"
+        android:divider="@null"
+        android:dividerHeight="2dp" />
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:translationX="-10sp"
+        android:translationY="80sp">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="Connect"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/connect"
+            android:background="#17000005">
+
+        </View>
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:text="Disconnect"
+            android:textColor="#000" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
